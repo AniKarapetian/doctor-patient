@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ՄեդԼայֆ </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status" ;>
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2" ;></small>
+                    <small>Armenia</small>
+                </div>
+
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+374 99 122322</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href="https://www.facebook.com/login/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1"
+                        href="https://www.linkedin.com/home" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0"
+                        href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary">
+
+
+                <img src="https://cdn-icons-png.freepik.com/256/11220/11220911.png?semt=ais_hybrid" alt=""
+                    style="width:15%">
+
+                MedLife
+            </h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active" style="color: rgb(198, 23, 23);">Գլխավոր</a>
+                <a href="about.html" class="nav-item nav-link">Մեր մասին</a>
+                <a href="service.html" class="nav-item nav-link">Ծառայություններ</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Էջեր</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="feature.html" class="dropdown-item">Առանձնահատկություն</a>
+                        <a href="team.html" class="dropdown-item">Մեր բժիշկները</a>
+                        <a href="appointment.html" class="dropdown-item">Նշանակումներ</a>
+                        <a href="testimonial.html" class="dropdown-item">Կարծիքներ</a>
+                        <a href="chat.html" class="dropdown-item">Զրույց</a>
+                       
+
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Կապ</a>
+                 <a href="chat.html" class="nav-item nav-link">Զրույց</a> 
+                 <a href="auth.html" class="nav-item nav-link">Մուտք</a>
+
+            </div>
+            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Եղիր առողջ մեզ հետ</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid header bg-primary p-0 mb-5">
+        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row ">
+            <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-4 text-white mb-5">Լավ առողջությունն արմատն է երջանկության...</h1>
+                <div class="row g-4">
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">123</h2>
+                            <p class="text-light mb-0">Փորձագետ բժիշկներ</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">10</h2>
+                            <p class="text-light mb-0">Տարիների փորձ</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">12345</h2>
+                            <p class="text-light mb-0">Երջանիկ հիվանդներ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid"
+                            src="https://www.gooddoctor.ru/uploads/blog/blog_post_161/povtorniipriem.jpg" alt=""
+                            style="width: 900px;height: 760px;">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Սրտաբանություն</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="https://klike.net/uploads/posts/2023-07/1690340976_3-73.jpg" alt=""
+                            style="width: 900px;height: 760px;">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Նյարդաբանություն</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid"
+                            src="https://www.fakulteti.mk/images/news/2023/03/20230327-lani-sme-dobile-197-novi-doktori-na-nauki-od-koi-46-po-medicina-m.jpg"
+                            alt="" style="width: 900px;height: 760px;">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Թոքային</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="https://www.doctora74.ru/im/doctor.jpg"
+                            alt="" style="width: 280px;height: 400px;">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3"
+                            src="https://img.freepik.com/premium-photo/health-care-medical-team-working-hospital-all-together-doctor-s-team_118454-6191.jpg?w=360"
+                            alt="" style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Մեր մասին</p>
+                    <h1 class="mb-4">Ինչու՞ պետք է վստահել մեզ: Իմացեք մեր մասին:</h1>
+                    <p>Մեր հարթակը համալրված է փորձառու մասնագետների թիմով, ովքեր փորձագետներ են իրենց համապատասխան
+                        ոլորտներում:</p>
+                    <p class="mb-4">Նրանք բերում են տարիների կլինիկական փորձ և գիտելիքներ՝ մեր հիվանդներին ճշգրիտ և
+                        հուսալի ուղեցույց տրամադրելու համար:</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Որակյալ առողջապահություն</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Միայն որակավորված բժիշկներ</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Բժշկական հետազոտությունների մասնագետներ</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="aboutus.html" target="_blank">Կարդալ
+                        ավելին</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Ծառայություններ</p>
+                <h1>Առողջապահական լուծումներ</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                            style="width: 65px; height: 65px;">
+                            <i class="fa fa-heartbeat text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Սրտաբանություն</h4>
+                        <p class="mb-4">Սրտաբանություն, կարդիոլոգիա, ժամանակակից
+                            բժշկագիտության բաժին, ուսումնասիրում է սիրտ-անոթային համակարգի (ՍԱՀ) կառուցվածքը, ֆունկցիան,
+                            հիվանդությունները, դրանց առաջացման պատճառները, զարգացման մեխանիզմները, կլինիկական
+                            ախտորոշումը, կանխարգելումը բուժումը։</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Կարդալ ավելին</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                            style="width: 65px; height: 65px;">
+                            <i class="fa fa-x-ray text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Թոքային</h4>
+                        <p class="mb-4">Մարդու թոքերը շնչառության զույգ օրգաններ են, որ տեղակայված են կրծքի խոռոչում՝
+                            ստոծանու համապատասխան գմբեթների վրա՝ սրտից, արյան խոշոր անոթներից և միջնորմի օրգաններից աջ
+                            ու ձախ՝ պարփակված կրծքամզային պարկերի մեջ։</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Կարդալ ավելին</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                            style="width: 65px; height: 65px;">
+                            <i class="fa fa-brain text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Նյարդաբանություն</h4>
+                        <p class="mb-4">Նյարդաբանություն, նևրոլոգիա, (նեյրո ․․․ և ․․․ լոգիա), բժշկա–կենսաբանական
+                            գիտություն, ուսումնասիրում է նյարդային համակարգի կառուցվածքն ու ֆունկցիան (բնականոն և
+                            ախտաբանական վիճակներում), օրինաչափությունները ֆիլոգենեզում և օնտոգենեզում։</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Կարդալ ավելին</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                            style="width: 65px; height: 65px;">
+                            <i class="fa fa-wheelchair text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Օրթոպեդիա</h4>
+                        <p class="mb-4">Օրթոպեդիա (ֆր.՝ orthopedie, հունարեն՝ ορθος՝ ուղիղ, ճիշտ և բառացի՝
+                            դաստիարակություն), կլինիկական բժշկագիտության բնագավառում ուսումնասիրում է մարդու
+                            հենաշարժական ապարատի ձևախախտումները, վնասվածքները և մշակում դրանց ախտորոշման, բուժման ու
+                            կանխարգելման մեթոդներ։</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Կարդալ ավելին</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                            style="width: 65px; height: 65px;">
+                            <i class="fa fa-tooth text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Ատամնաբուժություն</h4>
+                        <p class="mb-4">Ատամնաբուժություն, հայտնի նաև որպես ատամնային բժշկություն կամ բերանի խոռոչի
+                            բժշկություն, բժշկության ճյուղ, որը կազմված է ուսման, ախտորոշման, կանխարգելման և
+                            հիվանդությունների բուժման բաժիններից, բերանի խոռոչի ախտահարումներից և վիճակներից, որոնք
+                            սովորաբար կապված են ատամների, ինչպես նաև բերանի խոռոչի լորձաթաղանթի, մասնավորապես
+                            դիմածնոտային (դեմքի և ծնոտի) շրջանի հետ։</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Կարդալ ավելին</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                            style="width: 65px; height: 65px;">
+                            <i class="fa fa-vials text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Լաբորատորիա</h4>
+                        <p class="mb-4">Լաբորատորիա կամ աշխատանոց — Սարքավորված տարածք, հարմարված հատուկ փորձերի և հետազոտությունների համար
+                            (քիմիական, ֆիզիկական, տեխնիկական, մեխանիկական, ֆիզիոլոգիական, հոգեբանական և այլն)։</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Կարդալ ավելին</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Առանձնահատկություններ</p>
+                        <h1 class="text-white mb-4">Ի՞նչու ընտրել մեզ</h1>
+                        <p class="text-white mb-4 pb-2">Ընտրելով մեզ դուք կբարելավեք Ձեր կյանքի որակը և կխնայեք Ձեր
+                            ժամանակը:</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-user-md text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Փորձ</p>
+                                        <h5 class="text-white mb-0">Բժիշկներ</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-check text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Որակ</p>
+                                        <h5 class="text-white mb-0">Ծառայություններ</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-comment-medical text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Դրական</p>
+                                        <h5 class="text-white mb-0">Խորհրդակցություն</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light"
+                                        style="width: 55px; height: 55px;">
+                                        <i class="fa fa-headphones text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">24 ժամ</p>
+                                        <h5 class="text-white mb-0">Աջակցություն</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100"
+                            src="https://kartinki.pics/uploads/posts/2022-05/1653591748_57-kartinkin-net-p-doktor-i-patsient-kartinki-59.jpg "
+                            style="object-fit: cover; " alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Բժիշկներ</p>
+                <h1>Մեր փորձառու բժիշկները</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./93bb2e5ec845bf7765b295757c7713ff_nw.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Բիայնա Սուխուդյան</h5>
+                            <p class="text-primary"> Նյարդաբան</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./2a33b40afc5d3e05b5383034a816de3e_nw.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Արամ Բադալյան</h5>
+                            <p class="text-primary">Ուռուցքաբան</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./bedca6d6a4c61021a7c5697a029d2f5a_nw.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Կարեն Գրիգորյան</h5>
+                            <p class="text-primary">Վիրաբույժ</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="./c4368eb29490190a659542613b0797bd_nw.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Սոֆյա Վարդանյան</h5>
+                            <p class="text-primary">Հոգեբան</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Appointment Start -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Նշանակում</p>
+                    <h1 class="mb-4">Հարցեր մեր փորձառու բժիշկներին</h1>
+                    <p class="mb-4">Այստեղ կարող եք գտնել ձեզ հուզող բոլոր հարցերի պատասխանները:</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                            style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Զանգահարեք մեզ հիմա.</p>
+                            <h5 class="mb-0">+374 99 122 322 </h5>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
+                            style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Ուղարկել մեյլ մեզ հիմա</p>
+                            <h5 class="mb-0">onlinedoctor@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form  id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" id="name" placeholder="Անուն"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" id="email" placeholder="Էլ․հասցե"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" id="phone" placeholder="Հեռախոսահամար"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Ընտրեք բժիշկ</option>
+                                        <option value="1">Բիայնա Սուխուդյան</option>
+                                        <option value="2">Արամ Բադալյան</option>
+                                        <option value="3">Կարեն Գրիգորյան</option>
+                                        <option value="4">Սոֆյա Վարդանյան</option>
+                                        <option value="">Հելեն Ազարյան</option>
+                                        <option value="">Դավիթ Իգնոյան</option>
+                                        <option value="">Վարդանուշ Պետրոսյան</option>
+                                        <option value="">Միքայել Ադամյան</option>
+                                        <option value="">Սեթ Ղազարյան</option>
+                                        <option value="">Աշոտ Դավիդյանց</option>
+                                        <option value="">Անդրիաս Համբարձումյան</option>
+                                        <option value="">Հրանուշ Հովհաննիսյան</option>
+                                        <option value="">Ռաֆայել Պետրոսյան</option>
+                                        <option value="">Զարուհի Թավադյան</option>
+                                        <option value="">Վալենտինա Վարդանյան</option>
+                                        <option value="">Վերգա Փարվանյան</option>
+                                        <option value="">Շողեր Հեբոյան</option>
+                                        <option value="">Տիգրան Պետրոսյան</option>
+                                        <option value="">Վահե Տեր-Մինասյան</option>
+                                        <option value="">Թամարա Շահինյան</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" rows="5" id="message"
+                                        placeholder="Նկարագրեք ձեր խնդիրը"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" onclick="submitForm()">Ուղարկել</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Appointment End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Կարծիքներ</p>
+                <h1>Ի՞նչ են ասում մեր բուժառուները</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                        src="https://images.pexels.com/photos/2646834/pexels-photo-2646834.jpeg"
+                        style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>«Այս հարթակի օգտագործումը շատ հեշտացրել է իմ կյանքը: Ես գնահատում եմ, այն հնարավորությունը,
+                            որ
+                            կարող եմ շփվել իմ բժշկի հետ առանց բուժհաստատություն այցելելու։ Շնորհակալություն այս հարթակի
+                            բանիմաց բժիշկներին»։</p>
+                        <h5 class="mb-1">Թեհմինա Մանուկյան</h5>
+
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                    src="https://images.pexels.com/photos/1853103/pexels-photo-1853103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    style="width: 100px; height: 100px;">
+                <div class="testimonial-text rounded text-center p-4">
+                    <p>«Ինձ դուր է գալիս, թե որքան արագ են արձագանքում բժիշկները: Ամեն անգամ, երբ ես որևէ
+                        հարց կամ մտահոգություն ունեմ, ես միշտ կարող եմ հույս դնել,որ կստանամ արագ և օգտակար
+                        պատասխան։Շնորհակալություն բժիշկ Միքայել Ադամյանին»:</p>
+                    <h5 class="mb-1">Սյուզի Հարությունյան</h5>
+
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                    src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>«Այս հարթակի բժիշկներն իսկապես մտածում են իրենց հիվանդների բարեկեցության մասին: Ես միշտ
+                            օգտվել եմ այս հարթակից և ստացել եմ սպառիչ պատասխաններ։Հատուկ շնորհակալություն բժշկուհի
+                            Վարդանուշ Պետրոսյանին»։</p>
+                        <h5 class="mb-1">Թամարա Նավոյան</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Հասցե</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Armenia</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+374 99 122322 </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>onlinedoctor@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Ծառայություններ</h5>
+                    <a class="btn btn-link" href="">Սրտաբանություն</a>
+                    <a class="btn btn-link" href="">Թոքային</a>
+                    <a class="btn btn-link" href="">Նյարդաբանություն</a>
+                    <a class="btn btn-link" href="">Օրթոպեդիա</a>
+                    <a class="btn btn-link" href="">Լաբորատորիա</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Արագ հղումներ</h5>
+                    <a class="btn btn-link" href="">Մեր մասին</a>
+                    <a class="btn btn-link" href="">Կապ մեզ հետ</a>
+                    <a class="btn btn-link" href="">Մեր ծառայությունները</a>
+                    <a class="btn btn-link" href="">Պայմաններ և դրույթներ</a>
+                    <a class="btn btn-link" href="">Աջակցություն</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <form action="">
+                            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Էլ․հասցե">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Գրանցվել</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Armenia</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script> -->
+    <script type="module" src="js/firebase.js"> </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        function submitForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var message = document.getElementById('message').value;
+    
+            var mailtoLink = 'mailto:syuzi_navoyan@mail.ru' +
+                '?subject=' + encodeURIComponent('Contact Form Submission') +
+                '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nMessage: ' + message);
+    
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+
+
+</html>
