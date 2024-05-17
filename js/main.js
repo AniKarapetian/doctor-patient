@@ -1,6 +1,22 @@
 (function ($) {
     "use strict";
 
+//login/logout buttons
+
+const checkAuth = ()=>{
+    const data = localStorage.getItem('user');
+    const user = data? JSON.parse(data): null;
+
+    if (user){
+        $("#login-btn").hide();
+    } else {
+        $("#logout-btn").hide();
+    }
+}
+checkAuth();
+
+
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
