@@ -1,20 +1,56 @@
-(function ($) {
-    "use strict";
+const PUBLIC_KEY = 'Your public key here';
+const SERVICE_ID = 'Your service id here';
+const TEMPLATE_ID = 'Your template id here';
 
-//login/logout buttons
-
-const checkAuth = ()=>{
+const getAuthUser = ()=>{
     const data = localStorage.getItem('user');
     const user = data? JSON.parse(data): null;
+    return user;
+}
 
-    if (user){
+const submitForm=(event)=> {
+    event.preventDefault();
+    const user = getAuthUser();
+    const name = document.getElementById('name').value;
+    const email = user? user.email : document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    const selectedOption = document.getElementById('doctor-select');
+    const doctor = selectedOption.options[selectedOption.selectedIndex].innerText;
+
+        const templateParams = {
+            to_name: 'MedLife',
+            from_name: name,
+            from: email,
+            phone,
+            message: message,
+            doctor
+          };
+         
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Email sent successfully!');
+        }, function(error) {
+          console.log('FAILED...', error);
+          alert('Failed to send email. Please try again.');
+        });
+        document.getElementById('contactForm').reset();
+}
+
+
+(function ($) {
+    "use strict";   
+     emailjs.init(PUBLIC_KEY);
+
+    if (!!getAuthUser()){
+
         $("#login-btn").hide();
+        $("#email").hide();
     } else {
         $("#logout-btn").hide();
     }
-}
-checkAuth();
-
 
 
     // Spinner

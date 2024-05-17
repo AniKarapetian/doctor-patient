@@ -1,16 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyA2WWe5Ec1JUVRDcthhO8lGd8jav_ayX90",
-    authDomain: "medical-app-66572.firebaseapp.com",
-    projectId: "medical-app-66572",
-    storageBucket: "medical-app-66572.appspot.com",
-    messagingSenderId: "857440262383",
-    appId: "1:857440262383:web:c3112aba2d534d9531e31a",
-    measurementId: "G-V80WR8Y7LF"
+   //Your firebase configs here...
 };
+
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-
+const alertMessage =  document.getElementById('alert-msg');
 // Function to sign in
 function signIn() {
   const email = document.getElementById('email').value;
@@ -38,24 +34,33 @@ function signUp() {
   const name = document.getElementById('signup-name').value;
   const lastname = document.getElementById('signup-lastname').value;
 
+
+
   firebase.auth().createUserWithEmailAndPassword(email, password)
       .then((userCredential) => {
+        alertMessage && (alertMessage.innerText = 'wait...');
           // Signed up
           const user = userCredential.user;
-          localStorage.setItem('user', JSON.stringify(user));
 
-         user.updateProfile({
-           displayName: `${name} ${lastname}`
+          user.sendEmailVerification().then(function() {
+            alertMessage && (alertMessage.innerText = 'Verification email sent! Check your email!');
+            setTimeout(()=>{
+              alertMessage && (alertMessage.innerText = '');
+            }, 3000);
+          }).catch(function(error) {
+            alertMessage && (alertMessage.innerText = error.message);
           });
-
-          window.location.replace('/');
-      
+          
+          user.updateProfile({
+            displayName: `${name} ${lastname}`
+          });
+          localStorage.setItem('user', JSON.stringify(user));
+    
       })
       .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          alert(errorMessage);
+          alert(error.code, ':', error.message);
       });
+
 }
 
 // Function to sign out
@@ -71,11 +76,10 @@ function signOut() {
 
 // Firebase Auth State Change Listener
 firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
-      // User is signed in
-    //   document.getElementById('user-email').textContent = user.email;
-    //   document.getElementById('login-form').style.display = 'none';
-    //   document.getElementById('user-info').style.display = 'block';
+ 
+  if (user && user.emailVerified) {
+    alertMessage && (alertMessage.innerHTML = '<a href="index.html" class="nav-item nav-link active" style="color: rgb(198, 23, 23);">Գլխավոր</a>');
+ 
   } else {
       // User is signed out
     //   document.getElementById('login-form').style.display = 'block';

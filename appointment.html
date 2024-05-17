@@ -279,21 +279,9 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        function submitForm() {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var phone = document.getElementById('phone').value;
-            var message = document.getElementById('message').value;
-    
-            var mailtoLink = 'mailto:syuzi_navoyan@mail.ru' +
-                '?subject=' + encodeURIComponent('Contact Form Submission') +
-                '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nMessage: ' + message);
-    
-            window.location.href = mailtoLink;
-        }
-    </script>
+ 
 </body>
 
 </html>

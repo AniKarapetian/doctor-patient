@@ -682,29 +682,18 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-  
-    <!-- Template Javascript -->
+    
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="js/main.js"></script>
+
 
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
 	<script src="./js/auth.js"></script>
-    <script>
-        function submitForm() {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var phone = document.getElementById('phone').value;
-            var message = document.getElementById('message').value;
-    
-            var mailtoLink = 'mailto:syuzi_navoyan@mail.ru' +
-                '?subject=' + encodeURIComponent('Contact Form Submission') +
-                '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nMessage: ' + message);
-    
-            window.location.href = mailtoLink;
-        }
-    </script>
+
 </body>
 
 
