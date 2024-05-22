@@ -1,9 +1,20 @@
 
+const getAuthUser = ()=>{
+    const data = localStorage.getItem('user');
+    const user = data? JSON.parse(data): null;
+    return user;
+}
+
+
 const firebaseConfig = {
-    //Your firebase configs here...
+    apiKey: "AIzaSyAzQcwumtGOw6uit_uTUXvJHNdV8Xd8fnE",
+    authDomain: "simplechat-5efd5.firebaseapp.com",
+    databaseURL: "https://simplechat-5efd5-default-rtdb.firebaseio.com",
+    projectId: "simplechat-5efd5",
+    storageBucket: "simplechat-5efd5.appspot.com",
+    messagingSenderId: "248556814625",
+    appId: "1:248556814625:web:0d08fa03700838a007fe60"
 };
-
-
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -12,8 +23,15 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
 // get user's data
-const username = prompt("Գրեք ձեր անունը");
 
+const user = getAuthUser();
+let username = ''; 
+if (!user){
+   username = prompt("Գրեք ձեր մեյլը");
+} else {
+    username = user.email;
+}
+const receiver = prompt("Գրեք ստացողի մեյլը");
 // submit form
 // listen for submit event on the form and call the postChat function
 document.getElementById("message-form").addEventListener("submit", sendMessage);
@@ -26,20 +44,23 @@ function sendMessage(e) {
     const timestamp = Date.now();
     const messageInput = document.getElementById("message-input");
     const message = messageInput.value;
+    if (message){
 
-    // clear the input box
-    messageInput.value = "";
+        // clear the input box
+        messageInput.value = "";
+        //auto scroll to bottom
+        document
+        .getElementById("messages")
+        .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    
+        // create db collection and send in the data
+        db.ref("messages02/" + timestamp).set({
+        username,
+        message,
+        receiver,
+        });
+    }
 
-    //auto scroll to bottom
-    document
-    .getElementById("messages")
-    .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-
-    // create db collection and send in the data
-    db.ref("messages02/" + timestamp).set({
-    username,
-    message,
-    });
 }
 
 // display the messages
@@ -49,9 +70,13 @@ const fetchChat = db.ref("messages02/");
 // check for new messages using the onChildAdded event listener
 fetchChat.on("child_added", function (snapshot) {
     const messages = snapshot.val();
-    const message = `<li class=${
-    username === messages.username ? "sent" : "receive"
-    }><span>${messages.username}: </span>${messages.message}</li>`;
-    // append the message on the page
-    document.getElementById("messages").innerHTML += message;
+    if ((messages.username === username && messages.receiver === receiver)
+        ||((messages.username === receiver && messages.receiver === username) )) {
+
+        const message = `<li class=${
+        username === messages.username ? "sent" : "receive"
+        }><span>${messages.username}: </span>${messages.message}</li>`;
+        // append the message on the page
+        document.getElementById("messages").innerHTML += message;
+    }
 });
