@@ -1,0 +1,10 @@
+#localVideoContainer, #remoteVideoContainer {
+    width: 50%;
+    float: left;
+}
+
+video {
+    width: 100%;
+    height: 50vh;
+    border: 1px solid #ccc;
+}
