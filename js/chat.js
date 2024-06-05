@@ -7,13 +7,7 @@ const getAuthUser = ()=>{
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAzQcwumtGOw6uit_uTUXvJHNdV8Xd8fnE",
-    authDomain: "simplechat-5efd5.firebaseapp.com",
-    databaseURL: "https://simplechat-5efd5-default-rtdb.firebaseio.com",
-    projectId: "simplechat-5efd5",
-    storageBucket: "simplechat-5efd5.appspot.com",
-    messagingSenderId: "248556814625",
-    appId: "1:248556814625:web:0d08fa03700838a007fe60"
+     //Your firebase configs here...
 };
 
 // Initialize Firebase
