@@ -1,6 +1,6 @@
-const PUBLIC_KEY = 'Your public key here';
-const SERVICE_ID = 'Your service id here';
-const TEMPLATE_ID = 'Your template id here';
+const PUBLIC_KEY = '48gA01RFJQktkc5j4';
+const SERVICE_ID = 'service_ngji9cb';
+const TEMPLATE_ID = 'template_q48mrx9';
 
 const getAuthUser = ()=>{
     const data = localStorage.getItem('user');

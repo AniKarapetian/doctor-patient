@@ -6,18 +6,18 @@ const getAuthUser = ()=>{
 }
 
 
-const firebaseConfig = {
-    apiKey: "AIzaSyAzQcwumtGOw6uit_uTUXvJHNdV8Xd8fnE",
-    authDomain: "simplechat-5efd5.firebaseapp.com",
-    databaseURL: "https://simplechat-5efd5-default-rtdb.firebaseio.com",
-    projectId: "simplechat-5efd5",
-    storageBucket: "simplechat-5efd5.appspot.com",
-    messagingSenderId: "248556814625",
-    appId: "1:248556814625:web:0d08fa03700838a007fe60"
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyA2WWe5Ec1JUVRDcthhO8lGd8jav_ayX90",
+//   authDomain: "medical-app-66572.firebaseapp.com",
+//   projectId: "medical-app-66572",
+//   storageBucket: "medical-app-66572.appspot.com",
+//   messagingSenderId: "857440262383",
+//   appId: "1:857440262383:web:c3112aba2d534d9531e31a",
+//   measurementId: "G-V80WR8Y7LF"
+// };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+// // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
 
 // initialize database
 const db = firebase.database();
