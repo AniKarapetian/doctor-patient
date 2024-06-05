@@ -6,18 +6,7 @@ const getAuthUser = ()=>{
 }
 
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyA2WWe5Ec1JUVRDcthhO8lGd8jav_ayX90",
-//   authDomain: "medical-app-66572.firebaseapp.com",
-//   projectId: "medical-app-66572",
-//   storageBucket: "medical-app-66572.appspot.com",
-//   messagingSenderId: "857440262383",
-//   appId: "1:857440262383:web:c3112aba2d534d9531e31a",
-//   measurementId: "G-V80WR8Y7LF"
-// };
 
-// // Initialize Firebase
-// firebase.initializeApp(firebaseConfig);
 
 // initialize database
 const db = firebase.database();
